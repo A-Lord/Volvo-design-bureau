@@ -10,7 +10,7 @@ namespace Volvo_design_bureau
     {
         private static readonly List<Door> doors = new List<Door> { new Door(), new Door(), new Door(), new Door() };
         private static readonly List<Wheel> wheels = new List<Wheel> { new Wheel(), new Wheel(), new Wheel(), new Wheel() };
-        public CrossoverBlueprint(string carName) : base(carName, doors, wheels, new SteeringWheel(), new TurnIndicator(), new Hood(), new Engine())
+        public CrossoverBlueprint(string carName) : base(carName,"Crossover", doors, wheels, new SteeringWheel(), new TurnIndicator(), new Hood(), new Engine())
         {
 
         }

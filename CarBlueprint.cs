@@ -8,25 +8,32 @@ namespace Volvo_design_bureau
 {
     public abstract class CarBlueprint
     {
-        private string _modelName { get; }
-        private List<Door> _door { get; }
-        private Guid _vinNumber { get; }
-        private List<Wheel> _wheels { get; }
-        private SteeringWheel _steeringWheel { get; }
-        private TurnIndicator _turnIndicator { get; }
-        private Hood _hood { get; }
-        private Engine _engine { get; }
+        private int _carPrice;
+        public string ModelName { get; private init; }
+        private string TypeOfCar { get; }
+        private List<Door> Door = new List<Door>();
+        private Guid VinNumber { get; }
+        private List<Wheel> Wheels = new List<Wheel>();
+        private SteeringWheel SteeringWheel { get; }
+        private TurnIndicator TurningIndicator { get; }
+        private Hood Hood { get; }
+        private Engine Engine { get; }
 
+        public int CarPrice { get {  return _carPrice; } private set { _carPrice = value; } }
+            
 
-        public CarBlueprint(string carName,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
+        public CarBlueprint(string carName,string typeOfCar,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
         {
-            _modelName = carName;
-            _door.AddRange(doors);
-            _wheels.AddRange(wheels);
-            _turnIndicator = turnInd;
-            _hood = hood;
-            _engine = engine;
+
+            ModelName = carName;
+            TypeOfCar = typeOfCar;
+            Door.AddRange(doors);
+            Wheels.AddRange(wheels);
+            TurningIndicator = turnInd;
+            Hood = hood;
+            Engine = engine;
 
         }
+
     }
 }

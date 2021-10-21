@@ -9,6 +9,7 @@ namespace Volvo_design_bureau
     public abstract class CarBlueprint
     {
         private int _carPrice;
+
         public string ModelName { get; private init; }
         private string TypeOfCar { get; }
         private List<Door> Door = new List<Door>();
@@ -18,7 +19,7 @@ namespace Volvo_design_bureau
         private TurnIndicator TurningIndicator { get; }
         private Hood Hood { get; }
         private Engine Engine { get; }
-
+        
         public int CarPrice { get {  return _carPrice; } private set { _carPrice = value; } }
             
 
@@ -34,6 +35,7 @@ namespace Volvo_design_bureau
             Engine = engine;
 
         }
+        public override int GetHashCode() { return this; }
 
     }
 }

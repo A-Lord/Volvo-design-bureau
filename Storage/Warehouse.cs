@@ -5,23 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using Volvo_design_bureau;
 
-namespace Volvo_design_bureau.Warehouse
+namespace Volvo_design_bureau.Storage
 {
-    public class Warehouse : Inventory
+    public class Warehouse
     {
-        public Warehouse() : base()
+        private CrossoverStorageSpace _crossoverStorageSpace;
+        private SedanStorageSpace _sedanStorageSpace;
+
+        public Warehouse()
         {
-            List<CarBlueprint> startInventoryOfCars = new List<CarBlueprint>();
-            startInventoryOfCars.Add(new SedanBlueprint("V60"));
-            startInventoryOfCars.Add(new CrossoverBlueprint("XC90"));
-            startInventoryOfCars.Add(new CrossoverBlueprint("XC40"));
-            startInventoryOfCars.Add(new CrossoverBlueprint("XC40"));
-            startInventoryOfCars.Add(new SedanBlueprint("V60"));
-            startInventoryOfCars.Add(new SedanBlueprint("V40"));
-            startInventoryOfCars.Add(new SedanBlueprint("V60"));
-            startInventoryOfCars.Add(new CrossoverBlueprint("XC90"));
-            startInventoryOfCars.Add(new CrossoverBlueprint("v60"));
-            AddCarList(startInventoryOfCars);
+            //Dictionary<string, CrossoverBlueprint> CrossoverList = new Dictionary<string, CrossoverBlueprint>();
+            //for (int i = 0; i < length; i++)
+            //{
+
+            //}
+
+
+
+            //_sedanStorageSpace()
         }
     }
 }

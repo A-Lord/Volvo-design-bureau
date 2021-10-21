@@ -5,14 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Volvo_design_bureau;
 
-namespace Volvo_design_bureau.Warehouse
+namespace Volvo_design_bureau.Storage
 {
     public abstract class Inventory
     {
         private List<CarBlueprint> carList = new List<CarBlueprint>();
+        private Dictionary<string, CrossoverBlueprint> CrossoverList= new Dictionary<string, CrossoverBlueprint>();
         protected Inventory()
         {
             
+        }
+        protected void AddCarDictionary(Dictionary<string, CrossoverBlueprint> newCarDictinary)
+        {
+            CrossoverList = newCarDictinary;
         }
         protected void AddCarList(List<CarBlueprint> newCarsList)
         {

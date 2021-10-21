@@ -13,6 +13,9 @@ namespace Volvo_design_bureau
         {
             SerialNumber = Guid.NewGuid();
         }
-
+        public Guid GetSerialNr()
+        {
+            return SerialNumber;
+        }
     }
 }

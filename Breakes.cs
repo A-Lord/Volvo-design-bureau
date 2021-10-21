@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Volvo_design_bureau
 {
-    internal class Wheel
+    public class Breakes
     {
     }
 }

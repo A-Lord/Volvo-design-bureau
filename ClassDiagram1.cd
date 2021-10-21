@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Volvo_design_bureau.Sedan">
-    <Position X="6" Y="3.5" Width="1.5" />
+    <Position X="4.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Sedan.cs</FileName>
@@ -15,10 +15,10 @@
       <FileName>SerialNumber.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Volvo_design_bureau.Engine" Collapsed="true">
+  <Class Name="Volvo_design_bureau.Engine">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAA=</HashCode>
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,7 +38,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Volvo_design_bureau.Truck">
-    <Position X="6" Y="1" Width="1.5" />
+    <Position X="5.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Truck.cs</FileName>

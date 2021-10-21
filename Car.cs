@@ -16,40 +16,16 @@ namespace Volvo_design_bureau
         private TurnIndicator _turnIndicator { get; }
         private Hood _hood { get; }
         private Engine _engine { get; }
-        private SelfdrivingComputer _steeringComputer { get; }
 
-        public Car(string carName,int doors,int wheels,bool swheel,bool turnInd,bool hood,bool engine,bool AiDrive)
+
+        public Car(string carName,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
         {
             _modelName = carName;
-            for (int i = 0; i < doors; i++)
-            {
-                _door.Add(new Door());
-            }
-            for (int i = 0;i < wheels;i++)
-            {
-                _wheels.Add(new Wheel());
-            }
-            _vinNumber = Guid.NewGuid();
-            if (swheel)
-            {
-                _steeringWheel = new SteeringWheel();
-            }
-            if (turnInd)
-            {
-                _turnIndicator = new TurnIndicator();
-            }
-            if (hood)
-            {
-                _hood = new Hood();
-            }
-            if (engine)
-            {
-                _engine = new Engine();
-            }
-            if (AiDrive)
-            {
-                _steeringComputer = new SelfdrivingComputer();
-            }
+            _door.AddRange(doors);
+            _wheels.AddRange(wheels);
+            _turnIndicator = turnInd;
+            _hood = hood;
+            _engine = engine;
 
         }
     }

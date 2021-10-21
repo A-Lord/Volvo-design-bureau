@@ -27,5 +27,12 @@ namespace Volvo_design_bureau.Warehouse
             foreach (CarBlueprint car in carList)
                 Console.WriteLine(car.ModelName);
         }
+        public void FindFirstCarAndMoveToEnd(string carName)
+        {
+            var moveCar = carList.FindIndex(i => i.ModelName == carName);
+            var copyOfcar = carList[moveCar];
+            carList.RemoveAt(moveCar);
+            carList.Add(copyOfcar);
+        }
     }
 }

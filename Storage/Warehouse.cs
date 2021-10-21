@@ -15,6 +15,7 @@ namespace Volvo_design_bureau.Warehouse
             startInventoryOfCars.Add(new SedanBlueprint("V60"));
             startInventoryOfCars.Add(new CrossoverBlueprint("XC90"));
             startInventoryOfCars.Add(new CrossoverBlueprint("XC40"));
+            startInventoryOfCars.Add(new CrossoverBlueprint("XC40"));
             startInventoryOfCars.Add(new SedanBlueprint("V60"));
             startInventoryOfCars.Add(new SedanBlueprint("V40"));
             startInventoryOfCars.Add(new SedanBlueprint("V60"));

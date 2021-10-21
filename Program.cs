@@ -18,6 +18,10 @@ namespace Volvo_design_bureau.Warehouse
             var nissan = new CrossoverBlueprint("Nissan");
             var volovWareHouse = new Warehouse();
             volovWareHouse.ShowInventory();
+            Console.WriteLine();
+            volovWareHouse.FindFirstCarAndMoveToEnd("XC40");
+            volovWareHouse.FindFirstCarAndMoveToEnd("XC40");
+            volovWareHouse.ShowInventory();
         }
     }
 }

@@ -6,9 +6,9 @@ namespace Volvo_design_bureau
     {
         static void Main(string[] args)
         {
-            Sedan yaris = new Sedan("Toyota Yaris");
-            Truck volvo = new Truck("VoloLastbil");
-            Crossover nissan = new Crossover("Nissan");
+            var yaris = new SedanBlueprint("Toyota Yaris");
+            var volvo = new TruckBlueprint("VoloLastbil");
+            var nissan = new CrossoverBlueprint("Nissan");
             
         }
     }

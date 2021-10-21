@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Volvo_design_bureau
 {
-    public abstract class Car
+    public abstract class CarBlueprint
     {
         private string _modelName { get; }
         private List<Door> _door { get; }
@@ -18,7 +18,7 @@ namespace Volvo_design_bureau
         private Engine _engine { get; }
 
 
-        public Car(string carName,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
+        public CarBlueprint(string carName,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
         {
             _modelName = carName;
             _door.AddRange(doors);

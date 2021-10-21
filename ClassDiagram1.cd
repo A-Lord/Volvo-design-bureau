@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Volvo_design_bureau.Sedan">
+  <Class Name="Volvo_design_bureau.SedanBlueprint">
     <Position X="4.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Sedan.cs</FileName>
-      <NewMemberFileName>crossover.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAEAAAAAEAAAAAA=</HashCode>
+      <FileName>SedanBlueprint.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Volvo_design_bureau.SerialNumber">
@@ -30,26 +29,18 @@
       <NewMemberFileName>Wheel.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Volvo_design_bureau.Car">
+  <Class Name="Volvo_design_bureau.CarBlueprint">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAQAAAAAAICAAAIAAAAAEAAIAgAAAAQAAAA=</HashCode>
-      <FileName>Car.cs</FileName>
+      <HashCode>AAAEAAAAAAQAAAAAAIAAAAIAAAAAEAAIAgAAAAQAAAA=</HashCode>
+      <FileName>CarBlueprint.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Volvo_design_bureau.Truck">
+  <Class Name="Volvo_design_bureau.TruckBlueprint">
     <Position X="5.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Truck.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Volvo_design_bureau.crossover">
-    <Position X="7.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Crossover.cs</FileName>
-      <NewMemberFileName>crossover.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAA=</HashCode>
+      <FileName>TruckBlueprint.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

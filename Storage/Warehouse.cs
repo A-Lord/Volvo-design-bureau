@@ -10,7 +10,7 @@ namespace Volvo_design_bureau.Storage
     public class Warehouse
     {
         private CrossoverStorageSpace _crossoverStorageSpace;
-        private SedanStorageSpace _sedanStorageSpace;
+        //private SedanStorageSpace _sedanStorageSpace;
 
         public Warehouse(HashSet<CrossoverBlueprint> crossoversList) 
         {
@@ -20,6 +20,12 @@ namespace Volvo_design_bureau.Storage
         {
 
         }
+        public void GetAndCountCarsOfColor(string color)
+        {
+            var coloredCar = _crossoverStorageSpace.GetCarByColor(color);
+            Console.WriteLine($"{coloredCar.Count}");
+        }
+        
         //public Warehouse(HashSet<CarBlueprint> genericCars)
         //{
         //    HashSet<CrossoverBlueprint> crossoversList = new HashSet<CrossoverBlueprint>();

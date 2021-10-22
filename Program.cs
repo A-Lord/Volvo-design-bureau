@@ -30,17 +30,43 @@ namespace Volvo_design_bureau.Storage
 
             HashSet<CrossoverBlueprint> crossoverBlueprints = new HashSet<CrossoverBlueprint>();
             Random random= new Random();
+            var carColorRed = "Red";
+            var carColorGreen = "Green";
+            var carColorWhite = "White";
+            var carPickedColorString = "";
             for (int i = 0; i < 10000; i++)
             {
-
+                var colorPickID = random.Next(0, 4);
+                switch (colorPickID)
+                {   
+                    case 0:
+                        carPickedColorString = carColorRed;
+                        break;
+                        case 1:
+                            carPickedColorString = carColorGreen;
+                        break;
+                        case 2:
+                            carPickedColorString = carColorWhite;
+                        break;
+                    default:
+                        break;
+                }
+                if (random.Next(0,2) == 1)
+                {
+                    crossoverBlueprints.Add(new CrossoverBlueprint("XC40", carPickedColorString));
+                }
+                else
+                {
+                    crossoverBlueprints.Add(new CrossoverBlueprint("XC90", carPickedColorString));
+                }
 
             }
 
 
 
 
-            var VolvoWareHouse = new Warehouse();
-
+            var VolvoWareHouse = new Warehouse(crossoverBlueprints);
+            VolvoWareHouse.GetAndCountCarsOfColor("White");
 
 
 

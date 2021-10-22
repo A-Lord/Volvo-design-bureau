@@ -45,5 +45,17 @@ namespace Volvo_design_bureau.Storage
             carList.RemoveAt(moveCar);
             carList.Add(copyOfcar);
         }
+        public List<CrossoverBlueprint> GetCarByColor(string color)
+        {
+            List<CrossoverBlueprint> coloredCar = new List<CrossoverBlueprint>();
+            foreach (var car in crossoverHashList)
+            {
+                if (car._color == color)
+                {
+                    coloredCar.Add(car);
+                }
+            }
+            return coloredCar;
+        }
     }
 }

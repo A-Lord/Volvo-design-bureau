@@ -13,7 +13,7 @@ namespace Volvo_design_bureau
 
         //public override int GetHashCode() { /* Implementation */ }
         //public override bool Equals(object obj) { /* Implementation */ }
-        public CrossoverBlueprint(string carName) : base(carName,"Crossover", doors, wheels, new SteeringWheel(), new TurnIndicator(), new Hood(), new Engine())
+        public CrossoverBlueprint(string carName,string color) : base(carName,"Crossover",color, doors, wheels, new SteeringWheel(), new TurnIndicator(), new Hood(), new Engine())
         {
 
         }

@@ -25,11 +25,12 @@ namespace Volvo_design_bureau
         public int CarPrice { get {  return _carPrice; } private set { _carPrice = value; } }
             
 
-        public CarBlueprint(string carName,string typeOfCar,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
+        public CarBlueprint(string carName,string typeOfCar,string color,List<Door> doors,List<Wheel> wheels,SteeringWheel swheel,TurnIndicator turnInd,Hood hood,Engine engine)
         {
 
             ModelName = carName;
             TypeOfCar = typeOfCar;
+            _color = color;
             Door.AddRange(doors);
             Wheels.AddRange(wheels);
             TurningIndicator = turnInd;
@@ -37,7 +38,7 @@ namespace Volvo_design_bureau
             Engine = engine;
 
         }
-        public override int GetHashCode() { return this; }
+        //public override int GetHashCode() { return this; }
 
     }
 }

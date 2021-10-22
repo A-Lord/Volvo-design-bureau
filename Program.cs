@@ -22,11 +22,19 @@ namespace Volvo_design_bureau.Storage
             //volovWareHouse.FindFirstCarAndMoveToEnd("XC40");
             //volovWareHouse.FindFirstCarAndMoveToEnd("XC40");
             //volovWareHouse.ShowInventory();
-            Dictionary<string, CrossoverBlueprint> CrossoverList = new Dictionary<string, CrossoverBlueprint>();
-            CrossoverList.Add("XC40", new CrossoverBlueprint("XC40"));
-            CrossoverList.Add("XC90", new CrossoverBlueprint("XC90"));
-            CrossoverList.Add("XC90", new CrossoverBlueprint("XC90"));
+            //Dictionary<string, CrossoverBlueprint> CrossoverList = new Dictionary<string, CrossoverBlueprint>();
+            //CrossoverList.Add("XC40", new CrossoverBlueprint("XC40"));
+            //CrossoverList.Add("XC90", new CrossoverBlueprint("XC90"));
+            //CrossoverList.Add("XC90", new CrossoverBlueprint("XC90"));
 
+
+            HashSet<CrossoverBlueprint> crossoverBlueprints = new HashSet<CrossoverBlueprint>();
+            Random random= new Random();
+            for (int i = 0; i < 10000; i++)
+            {
+
+
+            }
 
 
 

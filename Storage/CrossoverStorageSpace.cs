@@ -8,9 +8,9 @@ namespace Volvo_design_bureau.Storage
 {
     public class CrossoverStorageSpace : Inventory
     {
-        public CrossoverStorageSpace() : base()
+        public CrossoverStorageSpace(HashSet<CrossoverBlueprint> CrossoverLis) : base()
         {
-
+            AddCarHashSet(CrossoverLis);
         }
     }
 }

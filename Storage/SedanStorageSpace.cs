@@ -8,9 +8,9 @@ namespace Volvo_design_bureau.Storage
 {
     public class SedanStorageSpace : Inventory
     {
-        public SedanStorageSpace(Dictionary<string, CrossoverBlueprint> CrossoverLis) : base()
+        public SedanStorageSpace() : base()
         {
-            AddCarDictionary(CrossoverLis);
+            
         }
 
     }

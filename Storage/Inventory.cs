@@ -11,10 +11,16 @@ namespace Volvo_design_bureau.Storage
     {
         private List<CarBlueprint> carList = new List<CarBlueprint>();
         private Dictionary<string, CrossoverBlueprint> CrossoverList= new Dictionary<string, CrossoverBlueprint>();
+        private HashSet<CrossoverBlueprint> crossoverHashList= new HashSet<CrossoverBlueprint>();
         protected Inventory()
         {
             
         }
+        protected void AddCarHashSet(HashSet<CrossoverBlueprint> newCarDictinary)
+        {
+            crossoverHashList = newCarDictinary;
+        }
+
         protected void AddCarDictionary(Dictionary<string, CrossoverBlueprint> newCarDictinary)
         {
             CrossoverList = newCarDictinary;

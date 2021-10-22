@@ -12,17 +12,20 @@ namespace Volvo_design_bureau.Storage
         private CrossoverStorageSpace _crossoverStorageSpace;
         private SedanStorageSpace _sedanStorageSpace;
 
-        public Warehouse()
+        public Warehouse(HashSet<CrossoverBlueprint> crossoversList) 
         {
-            //Dictionary<string, CrossoverBlueprint> CrossoverList = new Dictionary<string, CrossoverBlueprint>();
-            //for (int i = 0; i < length; i++)
-            //{
-
-            //}
-
-
-
-            //_sedanStorageSpace()
+            _crossoverStorageSpace = new CrossoverStorageSpace(crossoversList);
         }
+        public Warehouse(HashSet<SedanBlueprint> sedanList)
+        {
+
+        }
+        //public Warehouse(HashSet<CarBlueprint> genericCars)
+        //{
+        //    HashSet<CrossoverBlueprint> crossoversList = new HashSet<CrossoverBlueprint>();
+        //    HashSet<SedanBlueprint> sedanList = new HashSet<SedanBlueprint>();
+
+        // To:do Att way to move all CrossoverBlueprint objects from genericCars hashset to the new Crossover only hashset. 
+        //}
     }
 }

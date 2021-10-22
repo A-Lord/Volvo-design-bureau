@@ -8,9 +8,11 @@ namespace Volvo_design_bureau
 {
     public abstract class CarBlueprint
     {
-        private int _carPrice;
+        
 
         public string ModelName { get; private init; }
+        private int _carPrice;
+        public string _color = "";
         private string TypeOfCar { get; }
         private List<Door> Door = new List<Door>();
         private Guid VinNumber { get; }
